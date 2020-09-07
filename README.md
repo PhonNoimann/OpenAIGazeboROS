@@ -7,7 +7,8 @@ Una volta inserito il robot in questione all’interno del maze, abbiamo effettu
 I parametri sui quali abbiamo agito sono stati: 
 - **α, Learning rate**: che assume un valore compreso tra 0 e 1. Quando tale parametro è impostato a 0, il robot non apprende, invece per un alto valore di α, ad esempio 0.9, si favorisce la velocità di apprendimento;
 - **γ, Discount factor**: quando tale fattore è pari a 0 si considereranno solo i reward correnti, viceversa con un fattore pari ad 1 si considereranno i reward per un lungo periodo di tempo.
- - **ɛ, Exploration constant**: quando tale valore assume un valore pari a 0.9 si favorirà una decisione stocastica.
+- **ɛ, Exploration constant**: quando tale valore assume un valore pari a 0.9 si favorirà una decisione stocastica.
+
 I parametri iniziali sono stati: α = 0.2, γ = 0.4 e ɛ= 0.9. Sono stati modificati, nel corso delle simulazioni, agendo sul file turtlebot2_maze.yaml come descritto nel file README.md all’interno della cartella simulation_data del repository.
 Mediamente abbiamo utilizzato simulazioni di 500 episodi testandone anche uno di 1000. Abbiamo estrapolato i dati e li abbiamo plottati su Matlab, evidenziando anche le rette di regressione per poter capire se il robot stesse effettivamente imparando o no. Abbiamo notato solo pochi spike di reward molto elevati che nel corso della simulazione non sono più riapparsi, li abbiamo quindi considerati come outlier.
 Le simulazioni eseguite hanno prodotto i seguenti risultati:
@@ -25,3 +26,5 @@ Le simulazioni eseguite hanno prodotto i seguenti risultati:
  
 ## α = 0.1 γ = 0.9 (1000 episodes, rewards: +100 every 70 steps, +0.1 for every 0.4 m from side walls, +0.2 for every 0.4 m from front wall) 
 <img src="https://github.com/PhonNoimann/OpenAIGazeboROS/blob/master/simulation_data/05.jpg">
+
+## 
