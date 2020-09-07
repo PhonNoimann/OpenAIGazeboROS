@@ -27,4 +27,19 @@ Le simulazioni eseguite hanno prodotto i seguenti risultati:
 ## α = 0.1 γ = 0.9 (1000 episodes, rewards: +100 every 70 steps, +0.1 for every 0.4 m from side walls, +0.2 for every 0.4 m from front wall) 
 <img src="https://github.com/PhonNoimann/OpenAIGazeboROS/blob/master/simulation_data/05.svg">
 
-## 
+## How to run
+Per poter eseguire correttamente la simulazione, è necessario installare OpenAI ``` gym ```
+```
+pip install gym
+```
+Successivamente bisogna eseguire il clone della repository openai_ros fornita da The Construct Core (https://bitbucket.org/theconstructcore/openai_ros/src/version2/):
+```
+cd /home/user/catkin_ws/src
+git clone https://bitbucket.org/theconstructcore/openai_ros.git
+cd openai_ros;git checkout version2
+cd /home/user/catkin_ws;catkin_make;source devel/setup.bash
+```
+Infine si deve eseguire il launch file:
+```
+roslaunch my_turtlebot2_training start_training.launch
+```
