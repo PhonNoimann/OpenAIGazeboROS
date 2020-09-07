@@ -11,13 +11,13 @@ I parametri sui quali abbiamo agito sono stati:
 I parametri iniziali sono stati: α = 0.2, γ = 0.4 e ɛ= 0.9. Sono stati modificati, nel corso delle simulazioni, agendo sul file turtlebot2_maze.yaml come descritto nel file README.md all’interno della cartella simulation_data del repository.
 Mediamente abbiamo utilizzato simulazioni di 500 episodi testandone anche uno di 1000. Abbiamo estrapolato i dati e li abbiamo plottati su Matlab, evidenziando anche le rette di regressione per poter capire se il robot stesse effettivamente imparando o no. Abbiamo notato solo pochi spike di reward molto elevati che nel corso della simulazione non sono più riapparsi, li abbiamo quindi considerati come outlier.
 Le simulazioni eseguite hanno prodotto i seguenti risultati:
-• alpha = 0.2 gamma = 0.4 (500 episodes, rewards: +2 forward, +1 turn) 
-  <img https://github.com/PhonNoimann/OpenAIGazeboROS/blob/master/simulation_data/01.jpg>
-•	alpha = 0.1 gamma = 0.9 (500 episodes, rewards: +2 forward, +1 turn)
- 
-•	alpha = 0.1 gamma = 0.9 (500 episodes, rewards: +2 forward, +1 turn)
- 
-
-•	alpha = 0.1 gamma = 0.9 (200 episodes, rewards: +2 forward, +1 turn)
- 
-•	alpha = 0.1 gamma = 0.9 (1000 episodes, rewards: +100 every 70 steps, +0.1 for every 0.4 m from side walls, +0.2 for every 0.4 m from front wall)
+## α = 0.2 γ = 0.4 (500 episodes, rewards: +2 forward, +1 turn) 
+ <img src="https://github.com/PhonNoimann/OpenAIGazeboROS/blob/master/simulation_data/01.jpg">
+## α = 0.1 γ = 0.9 (500 episodes, rewards: +2 forward, +1 turn)
+ <img src="https://github.com/PhonNoimann/OpenAIGazeboROS/blob/master/simulation_data/02.jpg">
+## α = 0.1 γ = 0.9 (500 episodes, rewards: +2 forward, +1 turn)
+ <img src="https://github.com/PhonNoimann/OpenAIGazeboROS/blob/master/simulation_data/03.jpg">
+## α = 0.1 γ = 0.9 (200 episodes, rewards: +2 forward, +1 turn)
+ <img src="https://github.com/PhonNoimann/OpenAIGazeboROS/blob/master/simulation_data/04.jpg">
+## α = 0.1 γ = 0.9 (1000 episodes, rewards: +100 every 70 steps, +0.1 for every 0.4 m from side walls, +0.2 for every 0.4 m from front wall)
+ <img src="https://github.com/PhonNoimann/OpenAIGazeboROS/blob/master/simulation_data/05.jpg">
