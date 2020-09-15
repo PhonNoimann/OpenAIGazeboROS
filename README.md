@@ -39,6 +39,7 @@ git clone https://bitbucket.org/theconstructcore/openai_ros.git
 cd openai_ros;git checkout version2
 cd /home/user/catkin_ws;catkin_make;source devel/setup.bash
 ```
+Modificare il path di ros alla riga 3 nel file ```my_turtlebot2_maze_params.yaml``` 
 Infine si deve eseguire il launch file:
 ```
 roslaunch my_turtlebot2_training start_training.launch
